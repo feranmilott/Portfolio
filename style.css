@@ -1,43 +1,56 @@
 *{
     margin: 0%;
 }
-body{
-    /* background-color: black; */
-}
 .wrapper{
     width: 100%;
     margin: 0 auto;
 }
-.logo img{ 
+ .logo img{ 
     width:45%;
     border-radius: 50%;
-    /* margin: 30px; */
-    /* margin: 0 auto; */
+    margin-top: 30px;
 }
 .logo{
-    /* display: flex; */
-    /* margin: 20px ; */
-    /* position: fixed; */
+    display: flex;
+}
+/* .icon{
+    display: none;
+    color: #FFFFFF;
+} */
+.inform{
+    background-color: black;
+    width: 20%;
+    text-align: center;
+    /* padding: 10px 30px; */
+}
+.info a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 0px ;
+}
+.info a:hover{
+    color: #5899E2;
+}
+/*
+.logo{
     background-color: black;
     width: 20%;
     text-align: center;
 }
+
 .logo p{
     color: white;
 
 }
-a{
-    /* color: white; */
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    padding: 20px 0px ;
+.inside{
+    display: flex;
 }
+*/
 .main{
     background-image: url(images/pexels-taha-samet-arslan-14573611.jpg);
     width: 80%;
-    /* margin: auto;
-    background-size: auto; */
+    /* background-size:100% ; */
 }
 .text{
     width: 50%;
@@ -51,9 +64,9 @@ a{
     margin: 20px 0px;
     font-size: 20px;
 }
-.item{
+/* .item{
     display: flex;
-}
+} */ 
 .about h1{
     /* text-align: center; */
     margin: 20px 10px 0px 10px;
@@ -85,15 +98,22 @@ section:first-of-type{
 }
 .meet button{
     margin: 50px 10px 0px 10px;
-    padding: 0px 35px;
+    padding: 15px 35px;
     border-radius: 30px;
+    /* outline: none; */
+    background-color: black;
+    border: none;
+}
+.meet a{
+    text-decoration: none;
+    color: white;
 }
 .images img{
     width: 50%;
 }
 section:nth-of-type(2) h1{
     text-align: center;
-    padding:10px 0px ;
+    padding:20px 0px 30px 0px;
 }
 section:nth-of-type(2){
     background-image: linear-gradient(#2E3192,#1BFFFF);
@@ -104,13 +124,23 @@ section:nth-of-type(2){
     width: 80%;
     margin: 0 auto;
     align-items: center;
+    padding: 20px 0px;
 }
 .p-one p{
     width: 70%;
 }
+.two{
+    margin: 20px 0px;
+}
+.two a{
+    color: white;
+    text-decoration: none;
+    padding-left:10px ;
+}
 .p-one img{
     width: 25em;
     border-radius: 20px;
+    padding: 10px 0px;
 }
 .p-two{
     display: flex;
@@ -118,6 +148,8 @@ section:nth-of-type(2){
     width: 80%;
     margin: 0 auto;
     align-items: center;
+    padding: 20px 0px;
+
 }
 .p-two p{
     width: 70%;
@@ -129,55 +161,8 @@ section:nth-of-type(2){
 .p-two img{
     width: 25em;
     border-radius: 20px;
-    
+    padding: 10px 0px;   
 }
-/* .works{
-    display: flex;
-    width: 90%;
-    margin: 0 auto;
-    justify-content: space-evenly;
-
-}
-
-.work p{
-    width:50% ;
-}*/
-/* .works{
-    display: flex;
-    gap: 40px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.work1,.work2,.work3{
-    width: 30%;
-    padding: 30px 0px;
-}
-.works button{
-    margin: 10px ;
-    padding: 10px;
-    border-radius: 10px;
-}
-.works img{
-    width: 90%;
-    height: 10%;
-    /* box-shadow: 3px 3px 3px  black; */
-    /* box-shadow: 6px 0px 8px 4px rgb(225, 220,225);
-    border-radius: 20px 20px 0px 0px;
-} 
-.works h2{
-    padding: 0px 10px;
-}
-.inform {
-    width: 90%;
-    border-radius: 0px 0px 10px 10px;
-    box-shadow: 6px 4px 8px 4px rgb(225, 220,225);
-}
-.works p{
-    width: 80%;
-    margin: 10px 0px;
-    padding: 0px 10px;
-} */ 
 .stacks{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -289,8 +274,43 @@ footer h2{
 }
 footer img{
     width: 20px;
-}                          
-@media((min-width:375px) and (max-width:768px)){
+
+} 
+.link img {
+    display: none;
+    /* visibility: hidden; */
+}
+.links a{
+    display: none;
+}
+.icon i{
+    display: none;
+}
+/* .hamburger{
+    display: none;
+} */
+
+
+/* @media((min-width:375px) and (max-width:768px)){
+    nav a{
+        display: none;
+    }
+    .icon{
+        display: block;
+        font-size: 30px;
+        margin: 30px ;
+        
+    }
+    .logo img{
+        width: 10em;
+    }
+    .logo {
+        display: none;
+        width: 0%;
+    }
+    .main{
+        width: 100%;
+    }
     .meet{
         display: block;
         width: 80%;
@@ -298,12 +318,10 @@ footer img{
     }
     .picture img{   
     width: 100%;
-    /* height: 30em; */
     border-radius: 60px;
     }
     .about p{
     width: 98%;
-    /* margin: 10px; */
     }
     .about h1{
         text-align: center;
@@ -312,9 +330,6 @@ footer img{
     margin: 30px 10px 20px 10px;
     padding: 0px 35px;
     border-radius: 30px;
-    }
-  .work p{
-    /* width: 70% ; */
     }
     .work img{
     width: 50%;
@@ -358,8 +373,20 @@ footer img{
         display: block;
     }
     .p-three img{
-        width: 25em;
+        width: 100%;
     border-radius: 20px;
+    padding: 10px 0;
+
+    }
+    .p-one img{
+        width: 100%;
+    border-radius: 20px;
+    padding: 10px 0;
+
+    } .p-two img{
+        width: 100%;
+    border-radius: 20px;
+    padding: 10px 0;
 
     }
     .p-three{
@@ -373,7 +400,6 @@ footer img{
         width: 100%;
     }
     .one,.pic{
-        /* width: 50%; */
         width: 100%;
     }
     .image:nth-of-type(2) img{
@@ -386,4 +412,210 @@ footer img{
         margin: 0 auto;
         gap: 50px;
     }
-}
+    .f-one img{
+        width: 3em;
+    }
+    .f-two img{
+        width: 2em;
+     }
+
+
+} */
+@media((min-width:375px) and (max-width:768px)){
+    .icon i{
+        display: block;
+        margin: 20px 10px 0px 10px;
+        font-size: 30px;
+        color: #FFFFFF;
+    }
+    .info a{
+        display: none;
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 20px 0px ;
+
+    }
+    .logo img{ 
+        width:30%;
+        border-radius: 50%;
+        margin-top: 30px;
+    }
+    .main{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+     .inform {
+        display: none;
+     } 
+     
+     .links {
+        background-color: black;
+        border-radius: 5px;
+        width: 100px;
+        border: 2px solid black;
+        position: absolute;
+        transition: .3s ease;
+     } 
+     .links a{
+        display: block;
+        padding: 20px 10px;
+        color: #FFFFFF;
+        text-decoration: none;
+        /* border-bottom: 1px solid #ccc; */
+     }
+     .links a:hover{
+        color: #2E3192;
+     }
+     .lin{
+        display: none;
+     } 
+     .icon i{
+        /* position: absolute; */
+        /* padding: 10px; */
+     } 
+     .text{
+        position: relative;
+     }
+     .meet{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .picture img{   
+    width: 100%;
+    border-radius: 60px;
+    }
+    .about p{
+    width: 98%;
+    }
+    .about h1{
+        text-align: center;
+    }
+    .meet button{
+    margin: 30px 10px 20px 10px;
+    padding: 0px 35px;
+    border-radius: 30px;
+    }
+    .work img{
+    width: 50%;
+    height: 40%;
+    border-radius: 20px 20px 0px 0px;
+    }
+    .works{
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .stacks{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .stacks img{
+        width: 10em;
+    }
+    .contact{
+        display: block;
+    }
+    .first p{
+    width: 80%;
+    }
+    .real:nth-last-child(3){
+        display: none;
+    }
+    .third{
+        margin-top: 20px;
+    }
+    .p-one{
+        display: block;
+    }
+    .p-one p{
+        width: 100%;
+    }
+    .p-two{
+        display: none;
+    }
+    .p-three{
+        display: block;
+    }
+    .p-three img{
+        width: 100%;
+    border-radius: 20px;
+    padding: 10px 0;
+
+    }
+    .p-one img{
+        width: 100%;
+    border-radius: 20px;
+    padding: 10px 0;
+
+    } .p-two img{
+        width: 100%;
+    border-radius: 20px;
+    padding: 10px 0;
+
+    }
+    .p-three{
+        display: block;
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .p-three p{
+        width: 100%;
+    }
+    .one,.pic{
+        width: 100%;
+    }
+    .image:nth-of-type(2) img{
+        width: 15em;
+    }
+    .stacks{
+        display: grid;
+        grid-template-columns: 1fr ;
+        width: 50%;
+        margin: 0 auto;
+        gap: 50px;
+    }
+    .f-one img{
+        width: 3em;
+    }
+    .f-two img{
+        width: 2em;
+     }
+     /* .icon i:hover .links{
+        display: block;
+     } */
+    /* .inform{
+        display: none;
+    } */
+    /* .link {
+        background-color: black;
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin: 10px;
+
+    } */
+    
+    /* .link a{
+        color: white;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        padding: 15px 0px;
+    }
+    .link a:hover{
+        color: #2E3192;
+    }  */
+
+    /* .icon:hover div.inform{
+        display: block;
+    } */
+    /* .hamburger{
+        display: block;
+    } */
+    
+} 
